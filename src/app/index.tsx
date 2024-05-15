@@ -1,4 +1,4 @@
-import { useMetadata } from 'next/navigation';
+import Head from 'next/head';
 
 function Component() {
   useMetadata({

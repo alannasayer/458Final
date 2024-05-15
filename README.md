@@ -4,6 +4,58 @@ asayer@chapman.edu
 Please open code on VS Code, run "npm run dev" , and then go to the local host website depicted in terminal.
 
 
+Website Design Principles
+Color Palette:
+- Light blue background for a clean and inviting look.
+- Darker colors for text and links for good contrast and readability.
+- Button colors such as dark blue for primary actions to draw attention.
+
+Fonts:
+- "Helvetica Neue", Helvetica, Arial, sans-serif for a modern, clean, and professional look.
+
+Layout:
+- Centralized text and content for easy readability.
+- Consistent padding and margins for a balanced and uncluttered layout.
+- Use of boxes and cards to organize information clearly.
+
+Purpose of the Site
+
+The purpose of the website is to help parents and children in South Orange County keep track of youth sports events. It provides schedules for games, practices, and team meetings, making it easier for families to manage their time and ensure they don't miss important activities. The site exists to centralize all youth sports information in one place, offering convenience and efficiency for the community.
+
+Responsive Design
+
+The site is designed to be responsive and looks good on multiple screen sizes. The layout adjusts to different screen widths, ensuring that content is accessible and readable on devices ranging from mobile phones to desktop monitors.
+
+Netlify URL
+
+STILL NEED TO UPDATE
+
+State Management
+
+The site uses React's `useState` hook to keep track of user interactions. Examples include:
+- Tracking the selected date on the calendar.
+- Managing the list of events added to the user's calendar.
+- Handling search terms and filtering sports data based on user input.
+
+Data Fetching
+
+Internal Source:
+- The site fetches data from internal sources, local JSON files (`sportsData.json`) to populate sports events and schedules.
+
+
+Data Persistence
+ All data management and state tracking are handled within the React application itself.
+
+Summary of Implementation
+
+- **Design**: Light blue background, modern fonts, centralized content layout.
+- **Purpose**: To help manage and track youth sports schedules.
+- **Responsiveness**: Designed to look good on various screen sizes.
+- **Netlify Deployment**: URL provided upon deployment.
+- **State Management**: Uses React `useState` for handling interactions.
+- **Data Source**: Internal JSON file for sports data.
+- **Data Persistence**: No third-party persistence; all managed within the app.
+
 
 
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/layout';
 import sportsData from '../data/sportsData.json';
 import Calendar from 'react-calendar';
@@ -23,13 +23,7 @@ const About: React.FC = () => {
   const [message, setMessage] = useState<string>('');
   const [searchTerm, setSearchTerm] = useState<string>('');  // State to hold the search term
 
-  useEffect(() => {
-    console.log('Component mounted');
-    console.log('Sports data:', sportsData);
-  }, []);
-
   const handleAddToCalendar = (event: Event, sportName: string): void => {
-    console.log('Adding to calendar:', event, sportName);
     if (!addedEvents.some(e => e.id === event.id)) {
       const eventToAdd: Event = {
         ...event,
@@ -47,42 +41,26 @@ const About: React.FC = () => {
     sport.sport.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  console.log('Filtered sports:', filteredSports);
-
   const handleDateChange = (value: Date | Date[]) => {
-    console.log('Date changed:', value);
     setDate(Array.isArray(value) ? value[0] : value);
   };
 
   return (
     <Layout>
-      <div style={{
-          backgroundColor: '#f0f0f0', padding: '40px', color: '#333', borderRadius: '8px',
-          boxShadow: '0 4px 8px rgba(0,0,0,0.1)', maxWidth: '800px', margin: '20px auto',
-          fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif"
-        }}>
+      <div>
         <h1>About the Youth Sports Scheduler</h1>
         <input
           type="text"
           placeholder="Search for sports teams..."
-          style={{ width: '100%', padding: '10px', margin: '20px 0', borderRadius: '5px', border: '1px solid #ccc' }}
-          onChange={(e) => {
-            setSearchTerm(e.target.value);
-            console.log('Search term:', e.target.value);
-          }}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
-        {message && <p style={{ color: 'green', textAlign: 'center' }}>{message}</p>}
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
+        {message && <p>{message}</p>}
+        <ul>
           {filteredSports.map((sport: Sport) => (
             sport.events.map((event: Event) => (
-              <li key={event.id} style={{
-                backgroundColor: '#ffffff', margin: '10px 0', padding: '10px', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
-              }}>
+              <li key={event.id}>
                 {sport.sport} - {event.date} at {event.time}
-                <button onClick={() => handleAddToCalendar(event, sport.sport)} style={{
-                  marginLeft: '20px', backgroundColor: '#00488B', color: 'white', border: 'none',
-                  borderRadius: '5px', padding: '10px 20px', cursor: 'pointer', transition: 'background-color 0.3s'
-                }}>
+                <button onClick={() => handleAddToCalendar(event, sport.sport)}>
                   Add to Calendar
                 </button>
               </li>
@@ -95,7 +73,7 @@ const About: React.FC = () => {
           tileContent={({ date, view }) => (
             addedEvents.filter(e => new Date(e.date).toDateString() === date.toDateString())
               .map(e => (
-                <div key={e.id} style={{ padding: '5px', backgroundColor: 'lightblue', borderRadius: '5px', color: 'darkblue' }}>
+                <div key={e.id}>
                   {`${e.time} - ${e.location}`}
                 </div>
               ))

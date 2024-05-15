@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout';
 import sportsData from '../data/sportsData.json';
 import Calendar from 'react-calendar';
@@ -23,6 +23,11 @@ const About: React.FC = () => {
   const [message, setMessage] = useState<string>('');
   const [searchTerm, setSearchTerm] = useState<string>('');  // State to hold the search term
 
+  useEffect(() => {
+    console.log('Component mounted');
+    console.log('Sports data:', sportsData);
+  }, []);
+
   const handleAddToCalendar = (event: Event, sportName: string): void => {
     if (!addedEvents.some(e => e.id === event.id)) {
       const eventToAdd: Event = {
@@ -40,6 +45,8 @@ const About: React.FC = () => {
   const filteredSports = sportsData.filter((sport: Sport) =>
     sport.sport.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  console.log('Filtered sports:', filteredSports);
 
   const handleDateChange = (value: Date | Date[]) => {
     setDate(Array.isArray(value) ? value[0] : value);

@@ -29,6 +29,7 @@ const About: React.FC = () => {
   }, []);
 
   const handleAddToCalendar = (event: Event, sportName: string): void => {
+    console.log('Adding to calendar:', event, sportName);
     if (!addedEvents.some(e => e.id === event.id)) {
       const eventToAdd: Event = {
         ...event,
@@ -49,6 +50,7 @@ const About: React.FC = () => {
   console.log('Filtered sports:', filteredSports);
 
   const handleDateChange = (value: Date | Date[]) => {
+    console.log('Date changed:', value);
     setDate(Array.isArray(value) ? value[0] : value);
   };
 
@@ -64,7 +66,10 @@ const About: React.FC = () => {
           type="text"
           placeholder="Search for sports teams..."
           style={{ width: '100%', padding: '10px', margin: '20px 0', borderRadius: '5px', border: '1px solid #ccc' }}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            setSearchTerm(e.target.value);
+            console.log('Search term:', e.target.value);
+          }}
         />
         {message && <p style={{ color: 'green', textAlign: 'center' }}>{message}</p>}
         <ul style={{ listStyleType: 'none', padding: 0 }}>

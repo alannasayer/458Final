@@ -1,0 +1,135 @@
+[
+    {
+        "sport": "AYSO Soccer",
+        "events": [
+            {"id": 1, "date": "2024-06-15", "time": "10:00am", "location": "Field 3", "zipcode": "90210"},
+            {"id": 2, "date": "2024-06-22", "time": "2:00pm", "location": "Field 4", "zipcode": "90211"}
+        ]
+    },
+    {
+        "sport": "12U Gymnastics",
+        "events": [
+            {"id": 3, "date": "2024-06-18", "time": "5:00pm", "location": "Gym 1", "zipcode": "90212"},
+            {"id": 4, "date": "2024-06-25", "time": "7:00am", "location": "Gym 2", "zipcode": "90213"}
+        ]
+    },
+    {
+        "sport": "10U Baseball",
+        "events": [
+            {"id": 5, "date": "2024-06-20", "time": "4:00pm", "location": "Diamond 1", "zipcode": "90214"},
+            {"id": 6, "date": "2024-06-27", "time": "6:00am", "location": "Diamond 2", "zipcode": "90215"}
+        ]
+    },
+    {
+        "sport": "14U Basketball",
+        "events": [
+            {"id": 7, "date": "2024-06-19", "time": "10:00am", "location": "Court 1", "zipcode": "90216"},
+            {"id": 8, "date": "2024-06-26", "time": "5:00pm", "location": "Court 2", "zipcode": "90217"}
+        ]
+    },
+    {
+        "sport": "8U Swimming",
+        "events": [
+            {"id": 9, "date": "2024-06-21", "time": "09:00", "location": "Pool 1", "zipcode": "90218"},
+            {"id": 10, "date": "2024-06-28", "time": "11:00", "location": "Pool 2", "zipcode": "90219"}
+        ]
+    },
+    {
+        "sport": "16U Volleyball",
+        "events": [
+            {"id": 11, "date": "2024-07-02", "time": "10:00am", "location": "Volleyball Court 1", "zipcode": "90220"},
+            {"id": 12, "date": "2024-07-09", "time": "2:00pm", "location": "Volleyball Court 2", "zipcode": "90221"}
+        ]
+    },
+    {
+        "sport": "12u Tennis",
+        "events": [
+            {"id": 13, "date": "2024-07-15", "time": "10:00am", "location": "Tennis Center 1", "zipcode": "90222"},
+            {"id": 14, "date": "2024-07-22", "time": "6:00pm", "location": "Tennis Center 2", "zipcode": "90223"}
+        ]
+    },
+    {
+        "sport": "8u Rugby",
+        "events": [
+            {"id": 15, "date": "2024-08-05", "time": "09:00am", "location": "Rugby Field 1", "zipcode": "90224"},
+            {"id": 16, "date": "2024-08-12", "time": "11:00am", "location": "Rugby Field 2", "zipcode": "90225"}
+        ]
+    },
+    {
+        "sport": "8U Equestrian",
+        "events": [
+            {"id": 17, "date": "2024-08-19", "time": "10:00am", "location": "Cricket Pitch 1", "zipcode": "90226"},
+            {"id": 18, "date": "2024-08-26", "time": "2:00pm", "location": "Cricket Pitch 2", "zipcode": "90227"}
+        ]
+    },
+    {
+        "sport": "16u Equestrian",
+        "events": [
+            {"id": 25, "date": "2024-10-05", "time": "3:00pm", "location": "Archery Range 1", "zipcode": "90234"},
+            {"id": 26, "date": "2024-10-12", "time": "9:00am", "location": "Archery Range 2", "zipcode": "90235"}
+        ]
+    },
+    {
+        "sport": "12U Taekwondo",
+        "events": [
+            {"id": 27, "date": "2024-10-07", "time": "11:00am", "location": "Taekwondo Dojo 1", "zipcode": "90236"},
+            {"id": 28, "date": "2024-10-14", "time": "4:00pm", "location": "Taekwondo Dojo 2", "zipcode": "90237"}
+        ]
+    },
+    {
+        "sport": "14U Lacrosse",
+        "events": [
+            {"id": 29, "date": "2024-10-09", "time": "10:00am", "location": "Lacrosse Field 1", "zipcode": "90238"},
+            {"id": 30, "date": "2024-10-16", "time": "2:00pm", "location": "Lacrosse Field 2", "zipcode": "90239"}
+        ]
+    },
+    {
+        "sport": "10U Fencing",
+        "events": [
+            {"id": 31, "date": "2024-10-11", "time": "1:00pm", "location": "Fencing Center 1", "zipcode": "90240"},
+            {"id": 32, "date": "2024-10-18", "time": "6:00pm", "location": "Fencing Center 2", "zipcode": "90241"}
+        ]
+    },
+    {
+        "sport": "12U Golf",
+        "events": [
+            {"id": 33, "date": "2024-10-13", "time": "9:00am", "location": "Golf Course 1", "zipcode": "90242"},
+            {"id": 34, "date": "2024-10-20", "time": "3:00pm", "location": "Golf Course 2", "zipcode": "90243"}
+        ]
+    },
+    {
+        "sport": "12U Softball",
+        "events": [
+            {"id": 35, "date": "2024-10-15", "time": "4:00pm", "location": "Softball Field 1", "zipcode": "90244"},
+            {"id": 36, "date": "2024-10-22", "time": "11:00am", "location": "Softball Field 2", "zipcode": "90245"}
+        ]
+    },
+    {
+        "sport": "16U  Karate",
+        "events": [
+            {"id": 37, "date": "2024-10-17", "time": "10:00am", "location": "Karate Dojo 1", "zipcode": "90246"},
+            {"id": 38, "date": "2024-10-24", "time": "2:00pm", "location": "Karate Dojo 2", "zipcode": "90247"}
+        ]
+    },
+    {
+        "sport": "6U Judo",
+        "events": [
+            {"id": 39, "date": "2024-10-19", "time": "3:00pm", "location": "Judo Center 1", "zipcode": "90248"},
+            {"id": 40, "date": "2024-10-26", "time": "9:00am", "location": "Judo Center 2", "zipcode": "90249"}
+        ]
+    },
+    {
+        "sport": "Junior Sailing",
+        "events": [
+            {"id": 41, "date": "2024-10-21", "time": "10:00am", "location": "Sailing Club 1", "zipcode": "90250"},
+            {"id": 42, "date": "2024-10-28", "time": "2:00pm", "location": "Sailing Club 2", "zipcode": "90251"}
+        ]
+    },
+    {
+        "sport": "10u Wrestling",
+        "events": [
+            {"id": 43, "date": "2024-10-23", "time": "5:00pm", "location": "Wrestling Arena 1", "zipcode": "90252"},
+            {"id": 44, "date": "2024-10-30", "time": "11:00am", "location": "Wrestling Arena 2", "zipcode": "90253"}
+        ]
+    }
+]

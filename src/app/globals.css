@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define CSS variables for color theming */
+:root {
+  --foreground-rgb: 255, 255, 255; 
+  --background-rgb: 100, 216, 230; 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; 
+    --background-rgb: 100, 216, 230; 
+  }
+}
+
+/* Apply the defined colors */
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb)); 
+}
+
+/* Additional utilities if needed */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; 
+  }
+}

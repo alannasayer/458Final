@@ -5,11 +5,11 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
 interface Event {
-  id: number;  // Change id to number
+  id: number;
   date: string;
   time: string;
   location: string;
-  sport?: string; // Added optional sport property to the interface
+  sport?: string;
 }
 
 interface Sport {

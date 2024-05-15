@@ -41,6 +41,10 @@ const About: React.FC = () => {
     sport.sport.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const handleDateChange = (value: Date | Date[]) => {
+    setDate(Array.isArray(value) ? value[0] : value);
+  };
+
   return (
     <Layout>
       <div style={{
@@ -74,7 +78,7 @@ const About: React.FC = () => {
           ))}
         </ul>
         <Calendar
-          onChange={setDate}
+          onChange={handleDateChange}
           value={date}
           tileContent={({ date, view }) => (
             addedEvents.filter(e => new Date(e.date).toDateString() === date.toDateString())

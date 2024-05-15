@@ -26,7 +26,8 @@ Responsive Design
 
 The site is designed to be responsive and looks good on multiple screen sizes. The layout adjusts to different screen widths, ensuring that content is accessible and readable on devices ranging from mobile phones to desktop monitors.
 
-Netlify URL
+Netlify URL: 
+https://main--sportwebsitealanna.netlify.app/about
 
 STILL NEED TO UPDATE
 

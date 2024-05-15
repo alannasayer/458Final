@@ -9,6 +9,7 @@ interface Event {
   date: string;
   time: string;
   location: string;
+  sport?: string; // Added optional sport property to the interface
 }
 
 interface Sport {
@@ -24,10 +25,9 @@ const About: React.FC = () => {
 
   const handleAddToCalendar = (event: Event, sportName: string): void => {
     if (!addedEvents.some(e => e.id === event.id)) {
-      const eventToAdd = {
+      const eventToAdd: Event = {
         ...event,
         sport: sportName,
-        date: new Date(event.date)
       };
       setAddedEvents([...addedEvents, eventToAdd]);
       setMessage('Events added to calendar successfully!');
@@ -89,7 +89,7 @@ const About: React.FC = () => {
           <ul>
             {addedEvents.map(e => (
               <li key={e.id}>
-                {`${e.sport} - ${e.date.toDateString()} at ${e.time}, Location: ${e.location}`}
+                {`${e.sport} - ${new Date(e.date).toDateString()} at ${e.time}, Location: ${e.location}`}
               </li>
             ))}
           </ul>

@@ -78,7 +78,7 @@ const About: React.FC = () => {
           ))}
         </ul>
         <Calendar
-          onChange={handleDateChange}
+          onChange={handleDateChange as any}
           value={date}
           tileContent={({ date, view }) => (
             addedEvents.filter(e => new Date(e.date).toDateString() === date.toDateString())

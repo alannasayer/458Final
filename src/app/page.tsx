@@ -87,7 +87,6 @@ const Home = () => {
                   transition: 'background-color 0.3s, color 0.3s',
                   cursor: 'pointer',
                   background: 'none',
-                  border: 'none',
                   fontSize: 'inherit'
                 }}>ABOUT</button>
               </Link>

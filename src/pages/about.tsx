@@ -5,7 +5,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
 interface Event {
-  id: string;
+  id: number;  // Change id to number
   date: string;
   time: string;
   location: string;
@@ -28,6 +28,7 @@ const About: React.FC = () => {
       const eventToAdd: Event = {
         ...event,
         sport: sportName,
+        date: new Date(event.date).toISOString(), // Keep date as string
       };
       setAddedEvents([...addedEvents, eventToAdd]);
       setMessage('Events added to calendar successfully!');
